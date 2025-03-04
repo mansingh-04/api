@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 import google.generativeai as ai
 
-API_KEY = "AIzaSyAR57zinTKEWXst6eUc3YkmcHtIeNg6U50"
+API_KEY = "AIzaSyCKSkrHWgyTfEucLosrxAG7VJ-_YLTrEUs"
 ai.configure(api_key=API_KEY)
-
-model = ai.GenerativeModel("gemini-pro")
+model_name = "gemini-1.5-pro"
+model = ai.GenerativeModel(model_name)
 chat = model.start_chat()
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
