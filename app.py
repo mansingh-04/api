@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import google.generativeai as ai
 
-API_KEY = "AIzaSyCKSkrHWgyTfEucLosrxAG7VJ-_YLTrEUs"
+API_KEY = "AIzaSyAR57zinTKEWXst6eUc3YkmcHtIeNg6U50"
 ai.configure(api_key=API_KEY)
 
 model = ai.GenerativeModel("gemini-pro")
